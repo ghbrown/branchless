@@ -8,13 +8,14 @@ all:
 	@echo "Running tests:"
 	@$(MAKE) -s python
 	@echo "Finished testing."
-	@echo " "
-	@echo "Updating results..."
 	@$(MAKE) -s results
-	@echo "...finished."
 
 results:
+	@echo " "
+	@echo "Updating results..."
 	@$(PY) src/update_results.py
+	@echo "...finished."
+	@echo " "
 
 python:
 	@echo "  ...python"

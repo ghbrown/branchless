@@ -13,7 +13,7 @@ results_end_text = '<results end here>'
 
 #collect results from each language directory and generate lines for README
 results_lines=[] #empty list to hold lines that will generate results section of README
-results_lines.append(results_start_text + '\n') #add markdown comment to easily find start of results
+results_lines.append(results_start_text + '\n\n') #add markdown comment to easily find start of results
 for root, dirs, files in os.walk(lang_dir):
     for i_lang, lang_name in enumerate(dir_names):
         if lang_name in dirs:
