@@ -10,9 +10,13 @@ Results are organized by programming language, under which the relative speedup 
 
 <results start here>
 
+**Fortran**
+
+- ` num_thresh`: 1.05
+
 **Python**
 
-- `num_thresh`: 10.75
+- `num_thresh`: 10.08
 
 <results end here>
 

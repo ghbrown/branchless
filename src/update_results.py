@@ -1,9 +1,13 @@
 
 import os
 
+#get directory and official language names from languages.included file in src
+with open('src/languages.included','r') as f:
+    languages_included_lines_stripped=f.readlines()
+
 #lists of src/language/ directory names and corresponding "official" language names
-dir_names = ['python'] #only the names in this list will have their results pulled and used in the README
-official_names = ['Python']
+dir_names = (languages_included_lines_stripped[3].strip()).split() #only these names will have their results pulled and used in the README
+official_names = (languages_included_lines_stripped[6].strip()).split()
 
 relative_readme_path='README.md'
 cwd = os.getcwd() #current working directory
