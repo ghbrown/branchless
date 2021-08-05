@@ -3,7 +3,16 @@ A comparison of the relative speedup achieved by [branchless programming](https:
 
 
 ### Speedups by langauge
-For each language and test pair, the relative speedup is given as `t_branchless/t_branched`, where `t_branchless` is the CPU time taken by the branchless implementation, and `t_branched` is the time taken by the branched implementation.
+For each language and test pair, the relative speedup is given as `t_branched/t_branchless`, where `t_branched` is the CPU time taken by the branched implementation, and `t_branchless` is the time taken by the branchless implementation.
+Numbers greater than one imply branchless techniques result in a speedup, while numbers less than one imply a slowdown due to branchless techniques.
+
+Results are organized by programming language, under which the relative speedup is given for each test.
+
+<results start here>
+Python
+- `num_thresh`: 0.09
+
+<results end here>
 
 <you should autogenerate a plot on run>
 <bar plot with up and down bars around ratio=1>
