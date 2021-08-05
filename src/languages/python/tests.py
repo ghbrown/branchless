@@ -31,9 +31,9 @@ t_branchless = t1 - t0
 if (n_gt_branched != n_gt_branchless):
     print('ERROR: branched and branchless implementations give different results')
 
-num_thresh_speedup = t_branched/t_branchless #relative speedup of branchless techniques
+num_thresh_time_frac = t_branchless/t_branched #relative speedup of branchless techniques
 
 #-----------------------------
 
 with open(results_file_name,'w') as f:
-    f.write('num_thresh: ' + str(num_thresh_speedup) + '\n')
+    f.write('num_thresh: ' + str(num_thresh_time_frac) + '\n')
