@@ -1,7 +1,11 @@
 
+PY = python3
+FC = gfortran
+CC = gcc
+
 all:
 	@echo " "
-	@echo "Beginning tests:"
+	@echo "Running tests:"
 	@$(MAKE) -s python
 	@echo "Finished testing."
 	@echo " "
@@ -10,8 +14,8 @@ all:
 	@echo "...finished."
 
 results:
-	@python3 update_results.py
+	@$(PY) src/update_results.py
 
 python:
-	@echo "...testing python"
-	@python3 languages/python/tests.py
+	@echo "  ...python"
+	@$(PY) src/languages/python/tests.py

@@ -5,9 +5,9 @@ import os
 dir_names = ['python'] #only the names in this list will have their results pulled and used in the README
 official_names = ['Python']
 
-relative_readme_path='../README.md'
+relative_readme_path='README.md'
 cwd = os.getcwd() #current working directory
-lang_dir = cwd + '/languages'
+lang_dir = cwd + '/src/languages'
 results_start_text = '<results start here>'
 results_end_text = '<results end here>'
 
@@ -22,7 +22,7 @@ for root, dirs, files in os.walk(lang_dir):
             with open(results_file_name,'r') as f:
                 lines = f.readlines()
             
-            results_lines.append(official_names[i_lang]+'\n') #language name
+            results_lines.append('**' + official_names[i_lang] + '**\n\n') #language name
             for line in lines:
                 line_split = line.split(': ')
                 text = line_split[0]

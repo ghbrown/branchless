@@ -9,8 +9,9 @@ Numbers greater than one imply branchless techniques result in a speedup, while 
 Results are organized by programming language, under which the relative speedup is given for each test.
 
 <results start here>
-Python
-- `num_thresh`: 0.09
+**Python**
+
+- `num_thresh`: 0.10
 
 <results end here>
 
