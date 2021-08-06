@@ -2,7 +2,7 @@
 import os
 
 #get directory and official language names from languages.included file in src
-with open('src/languages.included','r') as f:
+with open('src/tested_languages.info','r') as f:
     languages_included_lines_stripped=f.readlines()
 
 #lists of src/language/ directory names and corresponding "official" language names
