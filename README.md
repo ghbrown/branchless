@@ -44,10 +44,11 @@ Results are organized by programming language, under which the relative speedup 
 
 ## Extra information
 
-This project uses GNU Make to run the tests. A Python script is used to collect all testing results and automatically update the `README.md`.
+This project uses GNU Make to run the tests.
+A Python script is used to collect all testing results and automatically update the [`README.md`](https://github.com/ghbrown/branchless/blob/main/README.md).
 
-Compiler optimizations are generally set to the maximum level, but look in the `Makefile` for the exact flags.
+Compiler optimizations are generally set to the maximum level, but look in the [`Makefile`](https://github.com/ghbrown/branchless/blob/main/Makefile) for the exact flags.
 
 ## Contributing
 
-If you would like to contribute tests for an open source language or suggest new kinds of tests, feel free to open an issue. Instructions for adding a new language are in `CONTRIBUTING.md`.
+If you would like to contribute tests for an open source language or suggest new kinds of tests, feel free to open an issue. Instructions for adding a new language are in [`CONTRIBUTING.md`](https://github.com/ghbrown/branchless/blob/main/CONTRIBUTING.md).

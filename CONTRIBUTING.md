@@ -6,9 +6,7 @@ To add a new language with alphabetical name `new_lang` (e.g. cpp) and official 
    - these tests should write the results to `src/languages/new_lang/results.data`, in the format below, and with tests in alphabetical order
    ```
    test_name: t_branchless/t_branched
-   .
-   .
-   .
+   ...more tests...
    ```
    - add a `make` rule called `new_lang` that executes the tests (the executable should be name `new_lang` and goes in `build/` (if `new_lang` is compiled)) and don't forget the `@echo "  ...new_lang"`
    - add a call of `new_lang`'s `make` rule in the `all` rule (in alphabetical order) 
