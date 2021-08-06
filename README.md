@@ -10,6 +10,7 @@ For each language and test pair, the ratio `t_branchless/t_branched` is computed
 Results are organized by programming language, under which the relative speedup is given for each test (see more about the tests below).
 
 ---
+
 <results start here>
 
 **C**
@@ -25,6 +26,7 @@ Results are organized by programming language, under which the relative speedup 
 - `num_thresh`: 11.13
 
 <results end here>
+
 ---
 
 <you should autogenerate a plot on run>
