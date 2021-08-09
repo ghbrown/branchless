@@ -18,15 +18,19 @@ Results are organized by programming language, under which the relative speedup 
 
 **C**
 
-- `num_thresh`: 0.98
+- `num_thresh`: 0.99
+
+**C++**
+
+- `num_thresh`: 0.95
 
 **Fortran**
 
-- `num_thresh`: 1.00
+- `num_thresh`: 1.02
 
 **Python**
 
-- `num_thresh`: 8.63
+- `num_thresh`: 9.69
 
 <results end here>
 

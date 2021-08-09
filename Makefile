@@ -1,14 +1,17 @@
 
-PY = python3
-FC = gfortran
-FF = -O3 -w
 CC = gcc
 CF = -O3
+CPPC = g++
+CPPF = -O3
+FC = gfortran
+FF = -O3 -w
+PY = python3
 
 all:
 	@echo " "
 	@echo "Running tests:"
 	@$(MAKE) -s c
+	@$(MAKE) -s cpp
 	@$(MAKE) -s fortran
 	@$(MAKE) -s python
 	@echo "Finished testing."
@@ -23,8 +26,13 @@ results:
 
 c:
 	@echo "  ...C"
-	@gcc $(CF) -o build/c src/languages/c/tests.c
+	@$(CC) $(CF) -o build/c src/languages/c/tests.c
 	@./build/c
+
+cpp:
+	@echo "  ...C++"
+	@$(CPPC) $(CPPF) -o build/cpp src/languages/cpp/tests.cpp
+	@./build/cpp
 
 fortran:
 	@echo "  ...Fortran"
