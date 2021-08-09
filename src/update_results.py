@@ -22,11 +22,11 @@ for root, dirs, files in os.walk(lang_dir):
         with open(results_file_name,'r') as f:
             lines = f.readlines()
         for line in lines:
-            line_split = line.split(': ')
-            text = line_split[0]
-            num_float = float(line_split[1])
+            line_split = line.split()
+            text = line_split[0] #test name
+            num_float = float(line_split[1]) #test result (number)
+            text_formatted = '- `' + text + '`: '
             num_formatted =  f'{num_float:.2f}'
-            text_formatted = '- `'+text+'`: '
             test_line_formatted = text_formatted + num_formatted + '\n'
             results_lines.append(test_line_formatted) #test name and speedup factor
         results_lines.append('\n') #blank line for markdown

@@ -36,4 +36,4 @@ num_thresh_time_frac = t_branchless/t_branched #relative speedup of branchless t
 #-----------------------------
 
 with open(results_file_name,'w') as f:
-    f.write('num_thresh: ' + str(num_thresh_time_frac) + '\n')
+    f.write('num_thresh  ' + str(num_thresh_time_frac) + '\n')

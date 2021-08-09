@@ -47,7 +47,7 @@ program tests
   !-------------------------------------
 
   open (unit = 9, file = results_file_name)
-  write(9,*) 'num_thresh: ', t_branchless/t_branched
+  write(9,*) 'num_thresh  ', t_branchless/t_branched
   close(unit = 9)
 end program tests
 

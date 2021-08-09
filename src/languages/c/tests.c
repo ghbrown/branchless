@@ -56,7 +56,7 @@ int main() {
 
   //write results to file
   fp = fopen(results_file_name,"w+");
-  fprintf(fp, "num_thresh: %f\n", (t_branchless/t_branched));
+  fprintf(fp, "num_thresh %f\n", (t_branchless/t_branched));
   fclose(fp);
 
 } //end main()
