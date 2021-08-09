@@ -43,7 +43,7 @@ Results are organized by programming language, under which the relative speedup 
 
 ## Tests
 
-`num_thresh`: given a random array of numbers, how many of them are above some threshold?
+`num_thresh`: given an array of random numbers, how many of them are above some threshold?
 
 
 ## Extra information
@@ -52,6 +52,8 @@ This project uses GNU Make to run the tests.
 A Python script is used to collect all testing results and automatically update the [`README.md`](https://github.com/ghbrown/branchless/blob/main/README.md).
 
 Compiler optimizations are generally set to the maximum level, but look in the [`Makefile`](https://github.com/ghbrown/branchless/blob/main/Makefile) for the exact flags.
+The level of optimizations can change the results drastically. For example, without compiler optimizations the branchless to branched time ratio for `num_thresh` is about 0.25 (compared to about 1.0 for `-O3` optimization).
+
 
 ## Contributing
 
