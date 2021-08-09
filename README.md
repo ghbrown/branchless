@@ -18,7 +18,7 @@ Results are organized by programming language, under which the relative speedup 
 
 **C**
 
-- `num_thresh`: 1.02
+- `num_thresh`: 1.01
 
 **Fortran**
 
@@ -26,7 +26,7 @@ Results are organized by programming language, under which the relative speedup 
 
 **Python**
 
-- `num_thresh`: 11.13
+- `num_thresh`: 9.32
 
 <results end here>
 

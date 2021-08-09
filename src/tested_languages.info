@@ -1,7 +1,0 @@
-#the line numbers of the contents are important in this file,
-#since the uncommented info is accessed by line rather than parsing
-#directory names (alphabetical order)
-c   fortran   python
-
-#official langauge names (match entrywise with above)
-C   Fortran   Python
