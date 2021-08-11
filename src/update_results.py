@@ -10,7 +10,26 @@ results_end_text = '<results end here>'
 results_lines=[] #empty list to hold lines that will generate results section of README
 results_lines.append(results_start_text + '\n\n') #add markdown comment to easily find start of results
 for root, dirs, files in os.walk(lang_dir):
-    for lang_name in dirs: #loop over language directories (lang_names)
+    #make list of official names
+    official_name_list = [0]*len(dirs)
+    for i_lang,lang_name in enumerate(dirs): #loop over language directories (alphabetical language names)
+        lang_dir = os.path.join(root,lang_name) # ../src/lang_dir
+        #get official name
+        official_name_file_name = os.path.join(lang_dir,'official_name')
+        with open(official_name_file_name,'r') as f:
+            official_name_list[i_lang] = (f.readlines()[0]).strip()
+
+    #sort official names alphabetically and get sort indices
+    name_index_list = sorted((official_name,index) for index, official_name in enumerate(official_name_list)) #[ (name, ind), ..., (name, ind) ] sorted by name
+    sorted_indices=[tup[1] for tup in name_index_list] #pull out only sorted indices
+
+    #sort dirs (alphabetical language names) by indices used to sort official language names
+    sorted_dirs = [0]*len(dirs)
+    for i,i_sorted in enumerate(sorted_indices):
+        sorted_dirs[i] = dirs[i_sorted]
+        
+    #access results and store them in formatted lines
+    for lang_name in sorted_dirs: #loop over *sorted* alphabetical language dirs
         lang_dir = os.path.join(root,lang_name) # ../src/lang_dir
         #get official name
         official_name_file_name = os.path.join(lang_dir,'official_name')

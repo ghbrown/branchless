@@ -49,16 +49,17 @@ int main() {
   t1 = clock();
   t_branchless = ((float)(t0 - t1))/cpu_freq;
 
+  free(v);
+
   if (n_gt_branched != n_gt_branchless){
     printf("ERROR: branched and branchless implementations give different results\n");
   }
-  free(v);
-  //-------------------------------------
 
-  //write results to file
+  //write test result to file
   fp = fopen(results_file_name,"w+");
   fprintf(fp, "num_thresh  %f\n", (t_branchless/t_branched));
   fclose(fp);
+  //-------------------------------------
 
   return 0;
 } //end main()

@@ -43,10 +43,11 @@ if (n_gt_branched != n_gt_branchless) {
   writeln("ERROR: branched and branchless implementations give different results");
 }
 
-//-----------------------------
-
+//write test result to file
 var f = open(results_file_name,iomode.cw);
 var chan = f.writer();
 chan.write("num_thresh  ", (t_branchless : real)/(t_branched : real));
 chan.close();
 f.close();
+//-----------------------------
+

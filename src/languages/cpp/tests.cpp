@@ -47,18 +47,18 @@ int main() {
   t1 = high_resolution_clock::now();
   t_branchless = std::chrono::duration<float>(t1 - t0).count();
   
+  delete[] v;
+
   if (n_gt_branched != n_gt_branchless){
     cout << "ERROR: branched and branchless implementations give different results\n";
   }
 
-  delete[] v;
-  //-------------------------------------
-
-  //write results to file
+  //write test result to file
   ofstream f;
   f.open(results_file_name);
   f << "num_thresh  " << (t_branchless/t_branched) << "\n";
   f.close();
+  //-------------------------------------
 
   return 0;
 }

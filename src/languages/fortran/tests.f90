@@ -44,11 +44,13 @@ program tests
   if (n_gt_branched /= n_gt_branchless) then
      print *, 'ERROR: branched and branchless implementations give different results'
   end if
-  !-------------------------------------
 
+  !write test result to file
   open (unit = 9, file = results_file_name)
   write(9,*) 'num_thresh  ', t_branchless/t_branched
   close(unit = 9)
+  !-------------------------------------
+
 end program tests
 
  

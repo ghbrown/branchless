@@ -24,7 +24,7 @@ t0 = time.perf_counter()
 for trial in range(n_trial):
     n_gt_branchless = 0 #accumulator for number of value in v greater than thresh
     for val in v:
-        n_gt_branchless += 1*(val > thresh)
+        n_gt_branchless += (val > thresh)
 t1 = time.perf_counter()
 t_branchless = t1 - t0
 
@@ -33,7 +33,9 @@ if (n_gt_branched != n_gt_branchless):
 
 num_thresh_time_frac = t_branchless/t_branched #relative speedup of branchless techniques
 
-#-----------------------------
-
+#write test result to file
 with open(results_file_name,'w') as f:
     f.write('num_thresh  ' + str(num_thresh_time_frac) + '\n')
+
+#-----------------------------
+

@@ -17,25 +17,25 @@ Results are organized by programming language, under which the relative speedup 
 
 <results start here>
 
-**Chapel**
-
-- `num_thresh`: 1.12
-
 **C**
 
 - `num_thresh`: 1.00
 
 **C++**
 
-- `num_thresh`: 0.97
+- `num_thresh`: 0.98
+
+**Chapel**
+
+- `num_thresh`: 1.12
 
 **Fortran**
 
-- `num_thresh`: 0.99
+- `num_thresh`: 0.96
 
 **Python**
 
-- `num_thresh`: 10.81
+- `num_thresh`: 11.04
 
 <results end here>
 
