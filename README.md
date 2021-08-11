@@ -11,6 +11,7 @@ For each language and test pair, the ratio `t_branchless/t_branched` is computed
 For example, 0.23 implies the branchless version ran in 23% of the time the branched version took.
 
 Results are organized by programming language, under which the relative speedup is given for each test (see more about the tests below).
+**Based on the fluctuations observed, these results have a relative uncertainty of about 10% (rough estimate).**
 
 ---
 
@@ -58,3 +59,16 @@ The level of optimizations can change the results drastically. For example, with
 ## Contributing
 
 If you would like to contribute tests for an open source language or suggest new kinds of tests, feel free to open an issue. Instructions for adding a new language are in [`CONTRIBUTING.md`](https://github.com/ghbrown/branchless/blob/main/CONTRIBUTING.md).
+
+If you want to contribute, and are looking for language suggestions, consider:
+- Chapel
+- JavaScript
+- Java
+- C#
+- Go
+- Rust
+- R
+- Julia
+- Pascal
+- Lisp
+- Perl
