@@ -17,21 +17,25 @@ Results are organized by programming language, under which the relative speedup 
 
 <results start here>
 
+**Chapel**
+
+- `num_thresh`: 1.12
+
 **C**
 
-- `num_thresh`: 0.99
+- `num_thresh`: 1.00
 
 **C++**
 
-- `num_thresh`: 0.95
+- `num_thresh`: 0.97
 
 **Fortran**
 
-- `num_thresh`: 1.02
+- `num_thresh`: 0.99
 
 **Python**
 
-- `num_thresh`: 9.69
+- `num_thresh`: 10.81
 
 <results end here>
 
@@ -61,7 +65,6 @@ The level of optimizations can change the results drastically. For example, with
 If you would like to contribute tests for an open source language or suggest new kinds of tests, feel free to open an issue. Instructions for adding a new language are in [`CONTRIBUTING.md`](https://github.com/ghbrown/branchless/blob/main/CONTRIBUTING.md).
 
 If you want to contribute, and are looking for language suggestions, consider:
-- Chapel
 - JavaScript
 - Java
 - C#

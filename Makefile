@@ -1,4 +1,6 @@
 
+#these compiler variables and flag are in alphabetical order by official language name
+#the order of runs in make all follows this ordering
 #C
 CC = gcc
 CF = -O3
@@ -23,6 +25,7 @@ all:
 	@echo "Running tests:"
 	@$(MAKE) -s c
 	@$(MAKE) -s cpp
+	@$(MAKE) -s chapel
 	@$(MAKE) -s fortran
 	@$(MAKE) -s python
 	@echo "Finished testing."
