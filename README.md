@@ -68,8 +68,7 @@ The level of optimizations can change the results drastically. For example, with
 
 If you would like to contribute tests for an open source language or suggest new kinds of tests, feel free to open an issue. Instructions for adding a new language are in [`CONTRIBUTING.md`](https://github.com/ghbrown/branchless/blob/main/CONTRIBUTING.md).
 
-If you want to contribute, and are looking for language suggestions, consider:
-- JavaScript
+If you want to contribute and are looking for language suggestions please consider:
 - Java
 - C#
 - Go
