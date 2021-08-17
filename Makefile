@@ -17,6 +17,9 @@ CHPLF = --fast
 FC = gfortran
 FF = -O3 -w
 
+#JavaScript
+JS = node
+
 #Python
 PY = python3
 
@@ -27,6 +30,7 @@ all:
 	@$(MAKE) -s cpp
 	@$(MAKE) -s chapel
 	@$(MAKE) -s fortran
+	@$(MAKE) -s javascript
 	@$(MAKE) -s python
 	@echo "Finished testing."
 	@$(MAKE) -s results
@@ -55,8 +59,13 @@ chapel:
 
 fortran:
 	@echo "  ...Fortran"
-	@gfortran $(FF) -o build/fortran src/languages/fortran/tests.f90
+	@$(FC) $(FF) -o build/fortran src/languages/fortran/tests.f90
 	@./build/fortran
+
+javascript:
+	@echo "  ...JavaScript"
+	@$(JS) src/languages/javascript/tests.js
+
 python:
 	@echo "  ...Python"
 	@$(PY) src/languages/python/tests.py
