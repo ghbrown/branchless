@@ -17,6 +17,11 @@ CHPLF = --fast
 FC = gfortran
 FF = -O3 -w
 
+#Java
+JC = javac
+JR = java
+#JF??? flags???
+
 #JavaScript
 JS = node
 
@@ -42,6 +47,14 @@ results:
 	@echo "...finished."
 	@echo " "
 
+clean:
+	@echo " "
+	@echo "Cleaning build artifacts..."
+	@rm -r build/*
+	@mkdir build/java
+	@echo "...finished."
+	@echo " "
+
 c:
 	@echo "  ...C"
 	@$(CC) $(CF) -o build/c src/languages/c/tests.c
@@ -61,6 +74,11 @@ fortran:
 	@echo "  ...Fortran"
 	@$(FC) $(FF) -o build/fortran src/languages/fortran/tests.f90
 	@./build/fortran
+
+java:
+	@echo " ...Java"
+	@$(JC) -d build/java src/languages/java/tests.java
+	@$(JR) -cp build/java tests
 
 javascript:
 	@echo "  ...JavaScript"
