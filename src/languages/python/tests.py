@@ -2,7 +2,7 @@ import time
 import numpy as np
 
 n_trial = 3 #number of times to repeat each test
-results_file_name='src/languages/python/results.data' #path of results file RELATIVE TO MAKEFILE
+results_file_name = 'src/languages/python/results.data' #path of results file RELATIVE TO MAKEFILE
 
 #---------num_thresh----------
 n = int(1e6) #problem size

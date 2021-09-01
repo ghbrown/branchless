@@ -35,6 +35,7 @@ all:
 	@$(MAKE) -s cpp
 	@$(MAKE) -s chapel
 	@$(MAKE) -s fortran
+	@$(MAKE) -s java
 	@$(MAKE) -s javascript
 	@$(MAKE) -s python
 	@echo "Finished testing."
@@ -76,7 +77,7 @@ fortran:
 	@./build/fortran
 
 java:
-	@echo " ...Java"
+	@echo "  ...Java"
 	@$(JC) -d build/java src/languages/java/tests.java
 	@$(JR) -cp build/java tests
 

@@ -27,7 +27,7 @@ int main() {
   //branched
   t0 = clock();
   for (int i_trial=0; i_trial<n_trial; i_trial++) {
-    n_gt_branched=0;
+    n_gt_branched = 0;
     for (int i=0; i<n; i++) {
 	if (v[i] > thresh) {
 	n_gt_branched += 1;

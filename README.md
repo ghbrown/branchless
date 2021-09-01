@@ -19,27 +19,31 @@ Results are organized by programming language, under which the relative speedup 
 
 **C**
 
-- `num_thresh`: 1.04
+- `num_thresh`: 0.99
 
 **C++**
 
-- `num_thresh`: 0.99
+- `num_thresh`: 1.01
 
 **Chapel**
 
-- `num_thresh`: 1.10
+- `num_thresh`: 1.11
 
 **Fortran**
 
-- `num_thresh`: 0.99
+- `num_thresh`: 1.01
+
+**Java**
+
+- `num_thresh`: 0.46
 
 **JavaScript**
 
-- `num_thresh`: 1.03
+- `num_thresh`: 0.94
 
 **Python**
 
-- `num_thresh`: 8.70
+- `num_thresh`: 10.04
 
 <results end here>
 
