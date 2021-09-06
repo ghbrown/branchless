@@ -33,17 +33,21 @@ Results are organized by programming language, under which the relative speedup 
 
 - `num_thresh`: 1.01
 
+**Go**
+
+- `num_thresh`: 1.11
+
 **Java**
 
-- `num_thresh`: 0.46
+- `num_thresh`: 0.48
 
 **JavaScript**
 
-- `num_thresh`: 0.94
+- `num_thresh`: 1.03
 
 **Python**
 
-- `num_thresh`: 10.04
+- `num_thresh`: 11.46
 
 <results end here>
 

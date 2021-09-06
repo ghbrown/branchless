@@ -29,9 +29,9 @@ int main() {
   for (int i_trial=0; i_trial<n_trial; i_trial++) {
     n_gt_branched = 0;
     for (int i=0; i<n; i++) {
-	if (v[i] > thresh) {
-	n_gt_branched += 1;
-	}
+	  if (v[i] > thresh) {
+		n_gt_branched += 1;
+	  }
     }
   }
   t1 = clock();
@@ -51,7 +51,7 @@ int main() {
 
   free(v);
 
-  if (n_gt_branched != n_gt_branchless){
+  if (n_gt_branched != n_gt_branchless) {
     printf("ERROR: branched and branchless implementations give different results\n");
   }
 

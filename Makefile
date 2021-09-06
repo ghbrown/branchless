@@ -17,10 +17,13 @@ CHPLF = --fast
 FC = gfortran
 FF = -O3 -w
 
+#Go
+GOC = go
+#GOF = FLAGS?
+
 #Java
 JC = javac
 JR = java
-#JF??? flags???
 
 #JavaScript
 JS = node
@@ -35,6 +38,7 @@ all:
 	@$(MAKE) -s cpp
 	@$(MAKE) -s chapel
 	@$(MAKE) -s fortran
+	@$(MAKE) -s go
 	@$(MAKE) -s java
 	@$(MAKE) -s javascript
 	@$(MAKE) -s python
@@ -75,6 +79,11 @@ fortran:
 	@echo "  ...Fortran"
 	@$(FC) $(FF) -o build/fortran src/languages/fortran/tests.f90
 	@./build/fortran
+
+go:
+	@echo "  ...Go"
+	@$(GOC) build -o build/go src/languages/go/tests.go
+	@./build/go
 
 java:
 	@echo "  ...Java"
